@@ -1,7 +1,6 @@
 # Use the official Nginx image from Docker Hub
 FROM nginx:alpine
 
-# Copy custom configuration file (if you have one)
 # COPY nginx.conf /etc/nginx/nginx.conf
 
 # Remove the default nginx index page

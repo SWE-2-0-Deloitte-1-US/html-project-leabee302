@@ -1,11 +1,17 @@
-FROM node:18
+# Use the official Nginx image from Docker Hub
+FROM nginx:alpine
 
-COPY package.json ./ 
+# Copy custom configuration file (if you have one)
+# COPY nginx.conf /etc/nginx/nginx.conf
 
-WORKDIR /app
+# Remove the default nginx index page
+RUN rm -rf /usr/share/nginx/html/*
 
-RUN npm install
+# Copy the content of the html directory to the default nginx public folder
+COPY . /usr/share/nginx/html
 
-EXPOSE 3000
+# Expose port 80
+EXPOSE 80
 
-CMD ["npm", "start"]
+# Start Nginx and keep it running in the foreground
+CMD ["nginx", "-g", "daemon off;"]

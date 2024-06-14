@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Page-specific Styles */
+  
+  /* Home Page */
+  #home {
+    text-align: center;
+  }
+ 
+  /* Bio Page */
+  #bio {
+    text-align: justify;
+  }
+  
+  /* Experience Page */
+  #experience ul {
+    padding: 0;
+  }
+  
+  #experience ul li {
+    margin-bottom: 20px;
+  }
+  
+  #experience ul li h3 {
+    margin-bottom: 5px;
+  }
+  
+  #experience ul li p {
+    margin-bottom: 10px;
+  }
+  
+  /* Portfolio Page */
+  #portfolio ul {
+    padding: 0;
+  }
+  
+  #portfolio ul li {
+    margin-bottom: 20px;
+  }
+  
+  #portfolio ul li h3 {
+    margin-bottom: 5px;
+  }
+  
+  #portfolio ul li p {
+    margin-bottom: 10px;
+  }
+  
+  #portfolio ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #portfolio ul li a:hover {
+    color: #555;
+  }
+  
